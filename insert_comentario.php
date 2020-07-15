@@ -12,3 +12,5 @@
 
     $insert = "INSERT INTO comentarios(nome, comentario) VALUES ('$nome', '$comentario')";
     $query = mysqli_query($conexao, $insert);
+
+    header('Location: main.php');

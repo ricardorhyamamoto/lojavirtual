@@ -69,3 +69,8 @@ h6 {
     color: honeydew;
     padding: 0px 30px;
 }
+
+div#comentario {
+    width: 400px;
+    margin: 100px auto 0px auto;
+}

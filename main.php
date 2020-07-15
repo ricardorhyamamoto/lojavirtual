@@ -1,6 +1,7 @@
 <?php
     session_start();
-    include('verifica_login.php');    
+    include('verifica_login.php');
+    include('conexao.php');
 ?>
 
 <!DOCTYPE html>
@@ -65,5 +66,30 @@
             </div>
         </div>
     </div>
+    <!-- FIM DA DIV PRODUTOS -->
+
+
+    <div class="container">
+        <div class="row">
+            <?php
+                $sql = mysqli_query($conexao, "SELECT * FROM comentarios");
+                $row = mysqli_num_rows($sql);
+                if ($row > 0) {
+                    while ($linha = mysqli_fetch_array($sql)) {
+                        $nome = $linha['nome'];
+                        $comentario = $linha['comentario'];
+                        echo "<div class=col-md-12>";
+                        echo "<h2>$nome</h2>";
+                        echo "<p>$comentario</p>";
+                        echo "<hr>";
+                        echo "</div>";
+                    }
+                } else {
+                    echo "<p>Nenhum comentário!</p>";
+                }
+            ?>
+    </div>
+    <!-- FIM DA DIV COMENTÁRIOS -->         
+
 </body>
 </html>

@@ -34,9 +34,10 @@ CREATE TABLE produtos (
 
   -- TABELA PARA COMENTÁRIOS
   CREATE TABLE comentarios (
-    id_coment INT AUTO_INCREMENT PRIMARY KEY,
+    id_coment INT AUTO_INCREMENT PRIMARY KEY ORDER BY DESC,
     nome VARCHAR(100) NOT NULL,
-    comentario TEXT NOT NULL
+    comentario TEXT NOT NULL,
+    data_comentario DATETIME NOT NULL
   )
 
 
