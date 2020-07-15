@@ -6,3 +6,5 @@
     define('db', 'lojavirtual');
     
     $conexao = mysqli_connect(host, usuario, senha, db);
+
+    return $conexao;
