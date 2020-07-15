@@ -10,6 +10,14 @@ CREATE TABLE usuarios (
   data_cadastro DATETIME NOT NULL)
 
 
+CREATE TABLE clientes (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	nome VARCHAR(100) NOT NULL,
+	email VARCHAR(100),
+	cidade VARCHAR(50),
+	estado VARCHAR(2))
+
+
 CREATE TABLE produtos (
   id_produto INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   nome VARCHAR(100) NOT NULL,
