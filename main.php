@@ -16,7 +16,7 @@
 
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#">Loja de Armas</a>
+            <a class="navbar-brand" href="main.php">Loja de Armas</a>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -25,6 +25,10 @@
 
                     <li class="nav-item">
                         <a class="nav-link" href="clientes.php">Clientes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="comentarios.php">Enviar Comentário</a>
                     </li>
                 </ul>
                 <form class="form-inline mt-2 mt-md-0">
