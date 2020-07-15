@@ -23,3 +23,9 @@ CREATE TABLE produtos (
   nome VARCHAR(100) NOT NULL,
   descricao VARCHAR(100) NOT NULL,
   valor VARCHAR(100) NOT NULL)
+
+
+insert into lojavirtual.clientes (nome, email, cidade, estado)
+         values('Ricardo','ricardo@teste.com','Itapevi','SP');
+insert into lojavirtual.clientes (nome, email, cidade, estado)
+         values('Haruo','haruo@teste.com','Barueri','SP');

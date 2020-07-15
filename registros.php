@@ -7,7 +7,7 @@ $registros = read();
 $html = '';
 foreach ($registros as $registro) {
     $html .= "<tr>
-                <td>{$registro['id']}</td>
+                <th scope='row'>{$registro['id']}</th>
                 <td>{$registro['nome']}</td>
                 <td>{$registro['email']}</td>
                 <td>{$registro['cidade']}</td>

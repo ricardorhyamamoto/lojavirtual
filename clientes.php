@@ -39,27 +39,41 @@
     </header>
 
     <div style="margin: 10vh auto; width: 75vw;">
+        <h2><p>Cadastrar Clientes</p></h2>
         <form action="./controller.php" method="post">
-            <div style="margin: 10px auto">
-                Nome: <input type="text" name="nome" placeholder="Digite seu nome">
-                E-mail: <input type="email" name="email" placeholder="Digite seu e-mail">
-                Cidade: <input type="text" name="cidade" placeholder="Digite sua cidade">
-                UF: <input type="text" name="estado" size="2" maxlength="2" placeholder="UF">
+            <div class="form-group">
+                <label>Nome</label>
+                <input type="text" name="nome" class="form-control" placeholder="Digite seu nome">
+                <br>
+
+                <label>E-mail</label>
+                <input type="email" name="email" class="form-control" placeholder="Digite seu e-mail">
+                <small id="emailHelp" class="form-text text-muted">Para excluir, informe apenas o e-mail cadastrado.</small>
+                <br>
+
+                <label>Cidade</label>
+                <input type="text" name="cidade" class="form-control" placeholder="Digite sua cidade">
+                <br>
+
+                <label>UF</label>
+                <input type="text" name="estado" size="2" maxlength="2" class="form-control" placeholder="UF">
+            </div><br>
+            <div>
+                <button type="submit" class="btn btn-success" name="cadastrar">Cadastrar</button>
+                <button type="submit" class="btn btn-warning" name="atualizar">Atualizar</button>
+                <button type="submit" class="btn btn-danger" name="excluir">Excluir</button>
             </div>
-            <div style="margin: 5vh auto">
-                <button type="submit" name="cadastrar">Cadastrar</button>
-                <button type="submit" name="atualizar">Atualizar</button>
-                <button type="submit" name="excluir">Excluir</button>
-            </div>
+            
             <div style="margin: 10vh auto">
-                <table border="1" style="width: 100%;" >
+                <h2><p>Clientes Cadastrados</p></h2>
+                <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>NOME</th>
-                            <th>E-MAIL</th>
-                            <th>CIDADE</th>
-                            <th>ESTADO</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">NOME</th>
+                            <th scope="col">E-MAIL</th>
+                            <th scope="col">CIDADE</th>
+                            <th scope="col">ESTADO</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -71,7 +85,3 @@
     </div>    
 </body>
 </html>
-
-
-
-
