@@ -4,7 +4,7 @@
 }
 
 input {
-    display:block;
+    display: block;
     height: 50px;
     width: 350px;
     margin: 15px;
@@ -71,6 +71,13 @@ h6 {
 }
 
 div#comentario {
+    display: block;
     width: 400px;
     margin: 100px auto 0px auto;
+}
+
+div#comentario input {
+    display: block;
+    margin: 0px;
+    width: 400px;
 }

@@ -25,7 +25,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="clientes.php">Clientes</a>
+                        <a class="nav-link" href="clientes.php">Cadastrar Clientes</a>
                     </li>
 
                     <li class="nav-item">
@@ -45,11 +45,16 @@
     </header>
 
     <div id="comentario">
+        <h2>Escreva um comentário</h2><br>
         <form action="insert_comentario.php" method="POST">
-            <label>Nome</label>
-            <input type="text" name="nome">
-            <label>Comentário</label>
-            <textarea rows="3" name="comentario"></textarea>
+            <div class="form-group">
+                <label>Nome</label>
+                <input type="text" name="nome" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Comentário</label>
+                <textarea rows="6" class="form-control" name="comentario" placeholder="Digite seu comentário"></textarea>
+            </div>
             <input type="submit" name="submit" value="Enviar Comentário">
         </form>
     </div>
