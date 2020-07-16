@@ -41,7 +41,7 @@ CREATE TABLE produtos (
   )
 
 
--- INSERINDO CLIENTES MANUALMENTE
+-- TESTE INSERINDO CLIENTES MANUALMENTE
 insert into lojavirtual.clientes (nome, email, cidade, estado)
          values('Ricardo','ricardo@teste.com','Itapevi','SP');
 insert into lojavirtual.clientes (nome, email, cidade, estado)
