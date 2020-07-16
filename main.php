@@ -5,7 +5,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cadastrar Produtos</a>
+                        <a class="nav-link" href="produtos.php">Cadastrar Produtos</a>
                     </li>
 
                     <li class="nav-item">
@@ -67,8 +67,8 @@
     </div>
     <!-- FIM DA DIV PRODUTOS -->
 
-
     <div class="container">
+        <h1><p>Comentários</p></h1>
         <div class="row">
             <?php
                 $sql = mysqli_query($conexao, "SELECT * FROM comentarios");
@@ -78,7 +78,7 @@
                         $nome = $linha['nome'];
                         $comentario = $linha['comentario'];
                         echo "<div class=col-md-12>";
-                        echo "<h2>$nome</h2>";
+                        echo "<h4>$nome</h4>";
                         echo "<p>$comentario</p>";
                         echo "<hr>";
                         echo "</div>";

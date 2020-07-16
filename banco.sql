@@ -26,7 +26,7 @@ CREATE TABLE clientes (
 -- TABELA PRODUTOS
 CREATE TABLE produtos (
   id_produto INT AUTO_INCREMENT PRIMARY KEY,
-  nome VARCHAR(100) NOT NULL,
+  nome_produto VARCHAR(100) NOT NULL,
   descricao VARCHAR(100) NOT NULL,
   valor VARCHAR(100) NOT NULL
 )
@@ -34,7 +34,7 @@ CREATE TABLE produtos (
 
   -- TABELA PARA COMENTÁRIOS
   CREATE TABLE comentarios (
-    id_coment INT AUTO_INCREMENT PRIMARY KEY ORDER BY DESC,
+    id_coment INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     comentario TEXT NOT NULL,
     data_comentario DATETIME NOT NULL

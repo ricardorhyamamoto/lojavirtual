@@ -1,6 +1,7 @@
 <?php
     session_start();
-    include('verifica_login.php');    
+    include('verifica_login.php');
+    include('conexao.php');
 ?>
 
 <!DOCTYPE html>
@@ -10,9 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Clientes</title>
+    <title>Cadastrar Produtos</title>
 </head>
 <body>
+
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <a class="navbar-brand" href="main.php">Loja de Armas</a>
@@ -43,24 +45,19 @@
     </header>
 
     <div style="margin: 10vh auto; width: 75vw;">
-        <h2><p>Cadastrar Clientes</p></h2>
-        <form action="./controller.php" method="post">
+        <h2><p>Cadastrar Produtos</p></h2>
+        <form action="./controller_produtos.php" method="post">
             <div class="form-group">
-                <label>Nome</label>
-                <input type="text" name="nome" class="form-control" placeholder="Digite seu nome">
+                <label>Produto</label>
+                <input type="text" name="nome_produto" class="form-control">
                 <br>
 
-                <label>E-mail</label>
-                <input type="email" name="email" class="form-control" placeholder="Digite seu e-mail">
-                <small id="emailHelp" class="form-text text-muted">Para excluir, informe apenas o e-mail cadastrado.</small>
+                <label>Descrição</label>
+                <input type="text" name="descricao" class="form-control">
                 <br>
 
-                <label>Cidade</label>
-                <input type="text" name="cidade" class="form-control" placeholder="Digite sua cidade">
-                <br>
-
-                <label>UF</label>
-                <input type="text" name="estado" size="2" maxlength="2" class="form-control" placeholder="UF">
+                <label>Valor</label>
+                <input type="text" name="valor" class="form-control">
             </div><br>
             <div>
                 <button type="submit" class="btn btn-success" name="cadastrar">Cadastrar</button>
@@ -74,18 +71,20 @@
                     <thead>
                         <tr>
                             <th scope="col">ID</th>
-                            <th scope="col">NOME</th>
-                            <th scope="col">E-MAIL</th>
-                            <th scope="col">CIDADE</th>
-                            <th scope="col">ESTADO</th>
+                            <th scope="col">NOME PRODUTO</th>
+                            <th scope="col">DESCRIÇÃO</th>
+                            <th scope="col">VALOR</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php include_once ( __DIR__ . '/registros.php') ?>
+                        <?php include_once ( __DIR__ . '/registro_produtos.php') ?>
                     </tbody>
                 </table>
             </div>
         </form>
-    </div>    
+    </div>
+    
+    
+
 </body>
 </html>

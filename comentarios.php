@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cadastrar Produtos</a>
+                        <a class="nav-link" href="produtos.php">Cadastrar Produtos</a>
                     </li>
 
                     <li class="nav-item">
