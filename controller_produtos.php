@@ -14,7 +14,7 @@
 
     if (isset($_POST['atualizar'])) {
         
-        updata($_POST['data']);
+        updata($_POST['atualizar']);
 
         header('location: produtos.php');
     }
@@ -22,7 +22,7 @@
 
     if (isset($_POST['excluir'])) {
 
-        delete($_POST['produto']);
+        delete($_POST['nome_produto']);
 
         header('location: produtos.php');
     }
