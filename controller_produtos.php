@@ -22,7 +22,7 @@
 
     if (isset($_POST['excluir'])) {
 
-        delete($_POST['email']);
+        delete($_POST['produto']);
 
         header('location: produtos.php');
     }

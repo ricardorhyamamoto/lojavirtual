@@ -23,18 +23,7 @@
 
         $conn = include_once ( __DIR__ . '/conexao.php');
         
-        $sql = "DELETE FROM produtos WHERE email = '$nome_produto'";
-
-        $conn->query($sql);
-    }
-
-    function updata($data) {
-        
-        $conn = include_once ( __DIR__ . '/conexao.php');
-
-        extract($data);
-
-        $sql = "UPDATE clientes SET email='$email', cidade='$cidade', estado='$estado' WHERE nome='$nome'";
+        $sql = "DELETE FROM produtos WHERE produto = '$nome_produto'";
 
         $conn->query($sql);
     }
